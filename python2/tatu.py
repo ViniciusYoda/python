@@ -7,7 +7,8 @@ while valor <= credito:
     credito -= valor
     print(f'Crédito: {credito:.2f}')
     valor = float(input('Valor: '))
-print(f'Total da compra:  {total:.2f}')
-print(f'Crédito restante: {credito:.2f}')
+
 if valor > credito:
     print('Valor acima do seu crédito')
+print(f'Total da compra:  {total:.2f}')
+print(f'Crédito restante: {credito:.2f}')
