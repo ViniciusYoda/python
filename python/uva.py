@@ -3,7 +3,7 @@ total = 0
 
 
 
-quero_comprar input('Você gostaria de comprar alguma coisa? (s/n)')
+quero_comprar =  input('Você gostaria de comprar alguma coisa? (s/n)')
 while(quero_comprar == 's'):
     preco = float(input('Qual o preço do produto?: R$ '))
     if preco <= credito:
