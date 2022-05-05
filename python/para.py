@@ -47,6 +47,6 @@ if estadoCivil != 's' and estadoCivil != 'v' and estadoCivil != 'c' and estadoCi
 else:
     print('concluido com sucesso!')
 
-print('O seu nome é: ' + nome + ', a sua idade é: ' + idade + ', o seu salário é de: ' + salario + ' , o seu sexo é de: ' + sexo + ' , e o seu estado civil é de: ' + estadoCivil)
+
 
 
