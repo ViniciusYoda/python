@@ -32,4 +32,4 @@ while op != '=':
     op = input('| + | - | * | / | = |')
 print(f'Maior: {maior}')  
 print(f'Menor: {menor}')
-print(f'Resultado: ' {result})
+print(f'Resultado:  {result}')
