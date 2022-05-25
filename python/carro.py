@@ -45,4 +45,4 @@ for s in sistemas:
 
 print('----------------------------')
 print(f'Total: {sum(sistemas)}')
-print('O sistemas operacional mais votado foi {melhorSis} com {melhor} votos  correspone{perc}')
+print(f'O sistemas operacional mais votado foi {melhorSis} com {melhor} {perc}')
