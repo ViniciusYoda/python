@@ -1,7 +1,7 @@
-executa = input('Executar o bloco ')
 contador = 0
-while executa == "sim":
-    contador  +=1
-    executa = input('Executar o bloco ')
-
-print(f'O bloco foi executador {contador} vezes ')
+letra = input("Digite a letra: ")
+while letra != "x":
+    letra = input("Digite a letra: ")
+    letra += 1
+    print(contador)
+print("x")
