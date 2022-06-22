@@ -1,0 +1,27 @@
+frase = '   Navio do Quero Querer   '
+print(frase)
+print(frase[3])
+print(frase[3:13])
+print(frase[:13])
+print(frase[13:])
+print(frase[1:15])
+print(frase[1:15:2])
+print(frase[1::2])
+print(frase[::2])
+print("""Arquivo editar seleção  ver acessar
+ executar terminal ajuda aula 09
+ explorador python
+ estrutura de codigo linha do tempo""")
+print(frase.count('o'))
+print(frase.upper().count('O'))
+print(len(frase))
+print(len(frase.strip()))
+print(frase.replace('Navio', 'Barco'))
+print('Quero' in frase)
+print(frase.capitalize())
+print(frase.title())
+print(frase.rstrip())
+print(frase.lstrip())
+print(frase.split())
+print(frase.join('oi'))
+print(frase.find('do'))
