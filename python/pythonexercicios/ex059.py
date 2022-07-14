@@ -3,7 +3,7 @@ n1 = int(input('Primeiro valor: '))
 n2 = int(input('Segundo valor: '))
 opcao = 0
 while opcao != 5:
-    print('''      [1] somar
+    print('''    [1] somar
     [2] multiplicar
     [3] maior
     [4] novos números
