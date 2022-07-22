@@ -9,4 +9,5 @@ while True:
     r = str(input('Quer continuar? [S/N] '))
     if r in 'Nn':
         break
+numeros.sort()
 print(f'Você digitous os valores: {numeros}')
