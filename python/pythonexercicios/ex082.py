@@ -13,4 +13,4 @@ for i, v in enumerate(num):
         impares.append(v)
 print(f'A lista completa é {num}')
 print(f'A lista de pares é {pares}')
-print(f'A lista de impares' {impares})
+print(f'A lista de impares {impares}')
