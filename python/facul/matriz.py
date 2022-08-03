@@ -1,4 +1,6 @@
-lista = [15, 7, 27, 39]
+lista = []
+for i in range(0, 5):
+    lista.append(int(input(f'Digite o {i} valor da lista: ')))
 n1 = int(input('Número 1: '))
 n2 = int(input('Número 2: '))
 
