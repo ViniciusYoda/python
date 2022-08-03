@@ -9,7 +9,7 @@ for c in range(0, 5):
         while pos < len(lista):
             if n <= lista[pos]:
                 lista.insert(pos, n)
-                print(^f"Adicionado na posição {pos}")
+                print(f"Adicionado na posição {pos}")
                 break
             pos += 1
 print(f'Os valores digitados em ordem foram {lista}')
