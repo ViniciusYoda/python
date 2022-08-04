@@ -60,11 +60,15 @@ def controlador(n1, n2, op):
            
 print('*- Principal -*')
 
-op = menu()
-n1 = entrada_de_dados()
-n2 = entrada_de_dados()
-result = controlador(n1, n2, op)
-imprimir(result)
+while True:
+    op = menu()
+    n1 = entrada_de_dados()
+    n2 = entrada_de_dados()
+    result = controlador(n1, n2, op)
+    imprimir(result)
+    resp = str(input('Quer continuar? [S/N] ')).upper()[0]
+    if resp == 'N':
+        break
 
 
 
