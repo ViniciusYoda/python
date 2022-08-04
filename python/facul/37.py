@@ -1,5 +1,5 @@
 def perguntar():
-    resposta = input("O que deseja realizar?
+    resposta = input("""O que deseja realizar?
 " +
                   "<I> - Para Inserir um usuário
 " +
@@ -7,7 +7,7 @@ def perguntar():
 " +
                   "<E> - Para Excluir um usuário
 " +
-                  "<L> - Para Listar um usuário: ").upper()
+                  "<L> - Para Listar um usuário: """).upper()
     return resposta
 
 def inserir(dicionario):
