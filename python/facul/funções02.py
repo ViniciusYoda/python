@@ -3,14 +3,16 @@ def entrada_de_dados():
     return n
 
 def dobro(n):
-    n * 2
-    return n
+    r = n * 2
+    return r
 
 def imprimir(result):
-    print(f'O dobro de {n} é {result}')
+    print(f'O dobro é {result}')
+    return result
+
 
 # principal
 
 num = entrada_de_dados()
-dobro = dobro()
-resultado = result(n, result)
+dobro = dobro(num)
+imprimir(dobro)
