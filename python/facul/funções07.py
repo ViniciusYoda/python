@@ -21,7 +21,7 @@ def div(n1, n2):
     return div
 
 def imprimir(result):
-    print(f'A multiplicação é {result}')
+    print(f'A divisão é {result}')
 
 n1 = entrada_de_dados()
 soma = soma(n1)

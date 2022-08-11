@@ -28,5 +28,6 @@ num1 = entrada_de_dados()
 num2 = entrada_de_dados()
 maior = maior(num1, num2)
 menor = menor(num1, num2)
-imprimir(f'O maior número entre {num1} e {num2} é {menor}')
+imprimir(f'O maior número entre {num1} e {num2} é {maior}')
+imprimir(f'O menor número entre {num1} e {num2} é {menor}')
     
