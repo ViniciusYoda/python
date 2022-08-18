@@ -1,23 +1,23 @@
-import math
-
 def entrada_de_dados():
-    n = int(input('Digite um número: '))
+    n = int(input(f'Digite o número para o delta: '))
     return n
 
-def calcularEquacao2(a, b, c):
-    delta = b ** 2 - 4 * a * c
+def delta(a, b, c):
+    delta = a ** 2 + b + c 
     return delta
 
-def raiz(a, b, c, delta):
-    x = - (-b) + math.sqrt(delta) / 2 * a
-    y = - (-b) - math.sqrt(delta) / 2 * 4
+def imprimir_raiz(delta):
+    if delta < 0:
+        print(-1)
+    else:
+        print(delta)
 
-def imprimir(result):
-    print(f'A raiz maior do delta é {result}')
+def principal():
+    a = entrada_de_dados()
+    b = entrada_de_dados()
+    c = entrada_de_dados()
+    delta = delta(a, b, c)
+    imprimir_raiz(delta)
 
-a = entrada_de_dados()
-b = entrada_de_dados()
-c = entrada_de_dados()
-equacao = calcularEquacao2(a,b,c)
-raiz = raiz(equacao)
-imprimir(raiz)
+principal()
+    
