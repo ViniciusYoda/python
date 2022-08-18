@@ -26,25 +26,23 @@ def imprimir_impares(lista):
             print(f'Números ímpares: {i}')
 
 def adicionar_pares(lista):
-    par = int(input('Digite um número par: '))
-    if par % 2 == 0:
-        lista.append(par)
-    else:
-        print('Número não adicionado')
-    return par
+    lista_pares = []
+    for i in lista:
+        if i%2 == 0:
+            lista_pares.append(i)
+    return lista_pares
 
 def adicionar_impares(lista):
-    impar = int(input('Digite um número ímpar: '))
-    if impar % 2 != 0:
-        lista.append(impar)
-    else:
-        print('Número não adicionado')
-    return impar
+    lista_impares = []
+    for i in lista:
+        if i%2 == 1:
+            lista_impares.append(i)
+    return lista_impares
 
 def buscar_elemento(lista):
     busca = int(input('Por qual elemento você está procurando? '))
     if busca in lista:
-        print(f'O núemro {busca} está na lista')
+        print(f'O número {busca} está na lista')
     else:
         print(f'O número {busca} não está na lista')
     return busca
@@ -55,10 +53,11 @@ def principal():
     lista = criar_lista(t)
     imprimir_lista(lista)
     imprimir_pares(lista)
+    lista_pares = adicionar_pares(lista)
+    imprimir_lista(lista_pares)
     imprimir_impares(lista)
-    adicionar_pares(lista)
-    adicionar_impares(lista)
-    imprimir_lista(lista)
+    lista_impares = adicionar_impares(lista)
+    imprimir_lista(lista_impares)
     buscar_elemento(lista)
 
 # programa principal
