@@ -7,3 +7,9 @@ aluno_0 = [5.5, 7.0, 8.7]
 aluno_1 = [8.5, 6.0, 9.2]
 aluno_2 = [7.8, 8.3, 8.5]
 aluno_3 = [0.0, 9.9, 9.1]
+
+def calcular_media(aluno):
+    soma = 0
+    for nota in aluno:
+        soma += nota
+    return soma
