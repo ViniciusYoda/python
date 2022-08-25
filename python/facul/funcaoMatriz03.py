@@ -12,3 +12,21 @@ def preenche_turma(qtde_alunos):
         aluno = coletar_notas()
         turma.append(aluno)
     return turma
+
+def calcula_media(aluno):
+    soma = 0
+    for nota in aluno:
+        soma += nota
+    return soma / len(aluno)
+
+def resumo_turma(turma):
+    for aluno in turma:
+        media = calcula_media(aluno)
+        print(f'notas: {aluno} | média: {media:.2f}')
+
+def principal():
+    qtde_alunos = int(input('Total de alunos: '))
+    turma = preenche_turma(qtde_alunos)
+    resumo_turma(turma)
+
+principal()
