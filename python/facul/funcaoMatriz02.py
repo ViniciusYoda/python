@@ -12,4 +12,12 @@ def calcular_media(aluno):
     soma = 0
     for nota in aluno:
         soma += nota
-    return soma
+    return soma / len(aluno)
+
+#programa principal
+print('Aluno 0')
+media = calcular_media(aluno_0)
+print(f'Média: {media:.2f}')
+print('Aluno 1')
+media = calcular_media(aluno_1)
+print(f'Média: {media:.2f}')
