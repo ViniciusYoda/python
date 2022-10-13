@@ -1,4 +1,4 @@
-peso = float(input('Qual é seu peso? (km) '))
+peso = float(input('Qual é seu peso? (cm) '))
 altura = float(input('Qual é a sua altura (m) '))
 imc = peso / (altura ** 2)
 print('O IMC dessa pessoa é de {:.1f}'.format(imc))

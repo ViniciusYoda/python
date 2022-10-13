@@ -1,5 +1,3 @@
-from traceback import print_tb
-
 
 largura = float(input('Largura da parede: '))
 altura = float(input('Altura da parede: '))
