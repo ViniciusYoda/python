@@ -10,4 +10,5 @@ def insertion_sort(lista):
         lista[j+1] = pivo
 
 lista = [12, 11, 13, 5, 6]
-insertion_sort(lista)
+po = insertion_sort(lista)
+print(po)
