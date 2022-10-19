@@ -72,7 +72,6 @@ def dezMil():
     lista = []
     for i in range(random.randint(1, 10000)):
         lista.append(i)
-        lista[1:10000]
     return lista
 
 def cemMil():
