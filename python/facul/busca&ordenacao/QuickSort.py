@@ -18,5 +18,5 @@ def quickSort(array):
     return quickSort(items_lower) + [pivot] + quickSort(items_greater)
 
 array = [8, 7, 5, 3, 1, 2, 9, 6, 4]
-quickSort(array)
-print(array)
+qs = quickSort(array)
+print(qs)

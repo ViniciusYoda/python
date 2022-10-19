@@ -1,3 +1,11 @@
+import time
+
+def get_time(lista):
+    inicio = mergeSort(lista).time()
+    time.sleep(lista)
+    fim = mergeSort(lista).time()
+    return fim-inicio
+
 def mergeSort(lista):
     if len(lista) > 1:
 
@@ -31,8 +39,9 @@ def mergeSort(lista):
 
     return lista
 
-lista = [12, 11, 13, 5, 6, 7]
-print(f'Lista:{lista}')
-ms = mergeSort(lista)
-print(f'Lista ordenada: {ms}')
+lista = [4, 3, 2, 1]
 
+merge = mergeSort(lista)
+
+dif = get_time(lista)
+print(f'Dif: {dif:.2f}')

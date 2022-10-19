@@ -1,3 +1,4 @@
+from heapq import merge
 import time
 import random
 
@@ -38,87 +39,62 @@ def insertionSort(lista):
 
 def mergeSort(lista):
     if len(lista) > 1:
-        meio = len(lista) // 2
-        esquerdo = lista[:meio]
-        direito = lista[meio:]
 
-        mergeSort(esquerdo)
-        mergeSort(direito)
+        meio = len(lista) // 2
+        left = lista[:meio]
+        right = lista[meio:]
+
+        mergeSort(left)
+        mergeSort(right)
 
         i = j = k = 0
-
-        while i < len(esquerdo) and j < len(direito):
-            if esquerdo[i] <= direito[j]:
-                lista[k] = esquerdo[i]
-                i+= 1
+        
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                lista[k] = left[i]
+                i += 1
             else:
-                lista[k] = direito[j]
+                lista[k] = right[j]
                 j += 1
             k += 1
 
-        while j < len(esquerdo):
-            lista[k] = esquerdo[i]
+        while i < len(left):
+            lista[k] = left[i]
             i += 1
-            k == 1
+            k += 1
 
-        while j < len(direito):
-            lista[k] = direito[j]
+        while j < len(right):
+            lista[k] = right[j]
             j += 1
-            k == 1
+            k += 1
+
     return lista
 
+def quickSort(lista):
+    tamanho = len(lista)
+    if tamanho <= 1:
+        return lista
+    else:
+        pivo = lista.pop()
 
-def dezMil():
-    lista = []
-    for i in range(random.randint(1, 10000)):
-        lista.append(i)
-    return lista
+    items_greater = []
+    items_lower = []
 
-def cemMil():
-    lista = []
-    for i in range(random.randint(1, 100000)):
-        lista.append(i)
-    return lista
+    for i in lista:
+        if i > pivo:
+            items_greater.append(i)
 
-def quiMil():
-    lista = []
-    for i in range(random.randint(1, 500000)):
-        lista.append(i)
-    return lista
+        else:
+            items_lower.append(i)
 
-def umMilhao():
-    lista = []
-    for i in range(random.randint(1, 1000000)):
-        lista.append(i)
-    return lista
+    return quickSort(items_lower) + [pivo] + quickSort(items_greater)
 
-def cincoMilhao():
-    lista = []
-    for i in range(random.randint(1, 5000000)):
-        lista.append(i)
-    return lista
-
-
-
-#def get_time(arg):
+def get_time(arg):
     inicio = time.time()
     time.sleep(arg)
     fim = time.time()
     return fim-inicio
 
 def principal():
-    dm = dezMil()
-    cm = cemMil()
-    qm = quiMil()
-    umm = umMilhao()
-    cmm = cincoMilhao()
-    bsdm = bubbleSort(dm)
-    bscm = bubbleSort(cm)
-    bsqm = bubbleSort(qm)
-    bsumm = bubbleSort(umm)
-    bscmm = bubbleSort(cmm)
-    print(dm)
+   pass
     
-
-
-principal()
