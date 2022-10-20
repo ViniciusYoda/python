@@ -1,6 +1,4 @@
-from heapq import merge
 import time
-import random
 
 def bubbleSort(lista):
     '''
@@ -96,5 +94,18 @@ def get_time(arg):
     return fim-inicio
 
 def principal():
-   pass
+    lista = [5000000, 1000000, 500000, 100000, 10000]
+    bs = bubbleSort(lista)
+    print(f'lista ordenada com o bubble sort: {bs}')
+    ss = selectionSort(lista)
+    print(f'lista ordenada com o selection sort: {ss}')
+    ins = insertionSort(lista)
+    print(f'lista ordenada com o insertion sort: {ins}')
+    ms = mergeSort(lista)
+    print(f'lista ordenada com o merge sort: {ms}')
+    qs = quickSort(lista)
+    print(f'lista ordenada com o quick sort: {qs}')
+
+
+principal()
     
