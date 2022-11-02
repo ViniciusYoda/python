@@ -1,4 +1,3 @@
-from logging import exception
 from ex115.lib.interface import *
 
 def arquivoExiste(nome):
