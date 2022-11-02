@@ -1,4 +1,3 @@
-import enum
 from random import randint
 lista = list()
 jogos = list()

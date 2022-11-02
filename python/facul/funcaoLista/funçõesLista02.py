@@ -8,6 +8,6 @@ def imprime_elemntos(lista):
     lista[0] = 2000
 
 #principal
-imprime_elementos(lista)
-imprime_elementos(lista)
+imprime_elemntos(lista)
+imprime_elemntos(lista)
 

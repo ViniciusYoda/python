@@ -5,6 +5,7 @@ def preencherInventario(lista):
 
         lista.append(equipamento)
         resp = input("Digite S para continuar: ").upper()
+    return lista
 
 def exibirInventario(lista):
     for elemento in lista:
@@ -43,3 +44,33 @@ def resumirValores(lista):
         print("O equipamento mais caro custa: ", max(valores))
         print("O equipamento mais barato custa: ", min(valores))
         print("O total de equipamentos é de: ", sum(valores))
+
+def menu():
+    op = int(input('Digite opção'))
+    return op
+
+def controle(op, inventario):
+    while True:
+        if op == 1:
+            preencherInventario(inventario)
+        if op == 2:
+            exibirInventario(inventario)
+        if op == 3:
+            localizarPorNome(inventario)
+        if op == 4:
+            depreciarPorNome(inventario, 20)
+        if op == 5:
+            excluirPorSerial(inventario)
+        if op == 6:
+            resumirValores(inventario)
+        if op > 6:
+            break
+
+op = menu()
+inventario = []
+controle(op, inventario)
+
+
+
+
+

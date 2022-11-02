@@ -1,6 +1,3 @@
-import enum
-
-
 jogador = dict()
 partidas = list()
 jogador['nome'] = str(input('Qual nome do jogador? '))

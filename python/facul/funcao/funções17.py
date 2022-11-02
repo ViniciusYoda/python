@@ -1,4 +1,4 @@
-from 37 import *
+from funcao import *
 usuarios={}
 
 opcao=perguntar()
